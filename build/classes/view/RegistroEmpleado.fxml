@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="850.0" style="-fx-background-image: url(images/wallpaperprincipal.jpg);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistroEmpleadoController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="299.0" layoutY="41.0" text="Registro de Empleados" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="90.0" text="Nombre y Apellidos:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nombre" layoutX="73.0" layoutY="115.0" prefHeight="25.0" prefWidth="238.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_email" layoutX="73.0" layoutY="169.0" prefHeight="25.0" prefWidth="238.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txt_telefono" layoutX="73.0" layoutY="234.0" prefHeight="25.0" prefWidth="238.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="74.0" layoutY="150.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="212.0" text="Teléfono:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="283.0" text="Vacaciones" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_vaca1" layoutX="73.0" layoutY="310.0" prefWidth="150.0" promptText="Elige mes" style="-fx-border-radius: 5px; -fx-background-radius: 5px;" visibleRowCount="8">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <TextArea fx:id="txt_vacaciones1" layoutX="73.0" layoutY="350.0" prefHeight="57.0" prefWidth="238.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <ComboBox fx:id="cmb_vaca2" layoutX="73.0" layoutY="415.0" prefWidth="150.0" promptText="Elige mes" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" visibleRowCount="8">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <TextArea fx:id="txt_vacaciones2" layoutX="73.0" layoutY="456.0" prefHeight="57.0" prefWidth="238.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="614.0" layoutY="90.0" text="Centro de Trabajo:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_centros" layoutX="614.0" layoutY="120.0" prefHeight="25.0" prefWidth="185.0" promptText="Escoge Centro de Trabajo" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" visibleRowCount="6">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label layoutX="614.0" layoutY="225.0" text="Total de Moscosos:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_totalMoscosos" layoutX="614.0" layoutY="250.0" prefHeight="25.0" prefWidth="185.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="614.0" layoutY="285.0" text="Moscosos Cogidos:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_moscososCogidos" layoutX="614.0" layoutY="310.0" prefHeight="48.0" prefWidth="185.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="614.0" layoutY="365.0" text="Horas Extras:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_horasExtras" layoutX="614.0" layoutY="390.0" prefHeight="48.0" prefWidth="185.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="614.0" layoutY="445.0" text="Sustituciones:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_sustituciones" layoutX="614.0" layoutY="466.0" prefHeight="48.0" prefWidth="185.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="410.0" layoutY="494.0" text="Observaciones" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txt_observaciones" layoutX="257.0" layoutY="523.0" prefHeight="99.0" prefWidth="405.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="365.0" layoutY="629.0" text="Creado por J. Martín de ENYJO SYSTEM." textFill="WHITE" />
+      <Button fx:id="btn_registrarEmpleOk" contentDisplay="GRAPHIC_ONLY" layoutX="410.0" layoutY="111.0" mnemonicParsing="false" onAction="#RegistrarEmpleadoOk" prefHeight="73.0" prefWidth="101.0" style="-fx-background-radius: 6px; -fx-border-radius: 6px; -fx-border-color: #6D6A69; -fx-border-width: 2px;">
+         <graphic>
+            <ImageView fitHeight="82.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="253.0" fitWidth="170.0" layoutX="375.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/limpiadora.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="614.0" layoutY="160.0" text="Centro para Informe:" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmb_centrosInformes" layoutX="614.0" layoutY="190.0" prefHeight="25.0" prefWidth="185.0" promptText="Escoge para Informe PDF" style="-fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-image: url(images/wallpaperprincipal.jpg);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MdPrincipalAutorizadoController">
+   <children>
+      <VBox layoutX="5.0" layoutY="6.0" prefHeight="589.0" prefWidth="173.0" style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: #8E8886;">
+         <children>
+            <Label alignment="CENTER" text="Almacén" textFill="WHITE">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="185.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icono1.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="28.0" top="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="21.0" prefWidth="161.0" text="Ayuntamiento" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="158.0" text="de" textFill="WHITE">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="3.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="159.0" text="El Molar" textFill="WHITE">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </Label>
+            <Label prefHeight="161.0" prefWidth="169.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: #464646; -fx-border-width: 3px;">
+               <graphic>
+                  <ImageView fitHeight="163.0" fitWidth="173.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ayuntamiento.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <AnchorPane id="AnchorPane" prefHeight="91.0" prefWidth="130.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label layoutX="5.0" layoutY="8.0" text="Usuario:" textFill="WHITE">
+                     <font>
+                        <Font name="Garamond Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label_usuario" layoutX="63.0" layoutY="6.0" prefHeight="21.0" prefWidth="95.0" text="usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Garamond Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="35.0" text="Fecha:" textFill="WHITE">
+                     <font>
+                        <Font name="Garamond Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label_fecha" layoutX="63.0" layoutY="35.0" prefHeight="20.0" prefWidth="95.0" text="lavel" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="62.0" text="Hora:" textFill="WHITE">
+                     <font>
+                        <Font name="Garamond Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Label_hora" layoutX="63.0" layoutY="60.0" prefHeight="21.0" prefWidth="95.0" text="Label" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <TabPane layoutX="178.0" layoutY="1.0" prefHeight="600.0" prefWidth="922.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="tab_almacen" text="PEDIDOS">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="847.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="11.0" prefHeight="554.0" prefWidth="356.0" style="-fx-border-color: #85817F; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-background-color: #EEE9E7;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="114.0" layoutY="14.0" text="Hacer pedido" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Garamond Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="40.0" layoutY="66.0" text="Fecha:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_fecha" alignment="CENTER" editable="false" layoutX="120.0" layoutY="62.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="40.0" layoutY="116.0" text="Proveedor:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txt_proveedor" editable="false" layoutX="120.0" layoutY="113.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label layoutX="40.0" layoutY="168.0" text="Pedido:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txt_pedido" editable="false" layoutX="120.0" layoutY="168.0" prefHeight="227.0" prefWidth="225.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextArea>
+                              <Button fx:id="btn_hacerPedido" alignment="CENTER" layoutX="178.0" layoutY="414.0" mnemonicParsing="false" onAction="#HacerPedido" prefHeight="34.0" prefWidth="105.0" style="-fx-background-radius: 5px; -fx-border-radius: 5px;" text="Guardar">
+                                 <font>
+                                    <Font name="Garamond Bold" size="18.0" />
+                                 </font>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <ImageView fitHeight="248.0" fitWidth="108.0" layoutX="9.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/secretele.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="62.0" layoutY="511.0" text="Creado por J. Martín de ENYJO SYSTEM" textFill="#030303" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="379.0" layoutY="10.0" prefHeight="554.0" prefWidth="535.0" style="-fx-border-color: #85817F; -fx-background-color: #EEE9E7; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" text="Pedidos realizados" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+                                 <font>
+                                    <Font name="Garamond Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="196.0" fitWidth="339.0" layoutX="107.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/cpedidos.png" />
+                                 </image>
+                              </ImageView>
+                              <TableView fx:id="tbl_pedidos" layoutX="15.0" layoutY="42.0" onMouseClicked="#FichaPedidos" prefHeight="293.0" prefWidth="506.0">
+                                 <columns>
+                                    <TableColumn fx:id="colum_id" prefWidth="47.0" text="Id" />
+                                    <TableColumn fx:id="colum_fecha" prefWidth="81.0" text="Fecha" />
+                                    <TableColumn fx:id="colum_nombre" prefWidth="107.0" text="Nombre R/S" />
+                                    <TableColumn fx:id="colum_pedido" prefWidth="270.0" text="Pedido" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab_precios" text="PRODUCTOS">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="471.0" prefWidth="605.0">
+                     <children>
+                        <AnchorPane layoutX="8.0" layoutY="11.0" prefHeight="553.0" prefWidth="340.0" style="-fx-border-color: #85817F; -fx-background-color: #EEE9E7; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="1.0" layoutY="14.0" text="Ingresar artículo en la lista de precios" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Garamond Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="227.0" fitWidth="241.0" layoutX="58.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/listapreci.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="19.0" layoutY="75.0" text="Nombre R/S:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="117.0" text="Artículo:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="19.0" layoutY="190.0" text="Precio:">
+                                 <font>
+                                    <Font name="Garamond Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btn_guardarProducto" layoutX="125.0" layoutY="242.0" mnemonicParsing="false" onAction="#GuardarProducto" text="Guardar">
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/guardar.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font name="Garamond Bold" size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <TextField fx:id="txt_nombreProvee" editable="false" layoutX="121.0" layoutY="72.0" prefHeight="25.0" prefWidth="196.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="txt_precioProducto" alignment="CENTER" editable="false" layoutX="121.0" layoutY="185.0" prefHeight="25.0" prefWidth="115.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextField>
+                              <TextArea fx:id="txt_articulo" editable="false" layoutX="121.0" layoutY="116.0" prefHeight="54.0" prefWidth="196.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </TextArea>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="363.0" layoutY="12.0" prefHeight="553.0" prefWidth="552.0" style="-fx-border-color: #85817F; -fx-background-color: #EEE9E7; -fx-background-radius: 10px; -fx-border-radius: 10px;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="210.0" layoutY="14.0" text="Lista de precios" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Garamond Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="tbl_listaPrecios" layoutX="9.0" layoutY="52.0" onMouseClicked="#FichaProductos" prefHeight="316.0" prefWidth="532.0">
+                                 <columns>
+                                    <TableColumn fx:id="colum_idPrecio" prefWidth="47.0" text="Id" />
+                                    <TableColumn fx:id="colum_nombreProvee" prefWidth="134.0" text="Nombre R/S" />
+                                    <TableColumn fx:id="colum_articulo" prefWidth="274.0" text="Artículo" />
+                                    <TableColumn fx:id="colum_precio" prefWidth="76.0" text="Precio" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="txt_buscar" layoutX="14.0" layoutY="418.0" onKeyReleased="#FiltrarProducto" prefHeight="30.0" prefWidth="231.0" promptText="Buscar árticulo">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Separator layoutX="19.0" layoutY="380.0" prefHeight="3.0" prefWidth="438.0" style="-fx-background-color: #99908F;" />
+                              <Label alignment="CENTER" layoutX="2.0" layoutY="503.0" text="Creado por J. Martín de ENYJO SYSTEM" textFill="#030303" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" />
+                              <ImageView fitHeight="31.0" fitWidth="38.0" layoutX="266.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/buscar4.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" style="-fx-background-image: url(images/wallpaperprincipal.jpg);" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.UsuariosRegistradosController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" text="Usuarios Registrados" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Garamond Bold" size="30.0" />
+         </font>
+      </Label>
+      <HBox layoutX="260.0" layoutY="69.0" prefHeight="260.0" prefWidth="700.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <TableView fx:id="tbl_usuarios" onMouseClicked="#FichaUsuario" prefHeight="213.0" prefWidth="623.0">
+               <columns>
+                  <TableColumn fx:id="colum_id" prefWidth="44.0" text="ID" />
+                  <TableColumn fx:id="colum_nombre" prefWidth="206.0" text="Nombre" />
+                  <TableColumn fx:id="colum_usuario" prefWidth="157.0" text="Usuario" />
+                  <TableColumn fx:id="colum_permiso" prefWidth="121.0" text="Permiso" />
+                  <TableColumn fx:id="colum_estatus" prefWidth="94.0" text="Estatus" />
+               </columns>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="364.0" text="Creado por J.Martín de ENYJO SYSTEM" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
